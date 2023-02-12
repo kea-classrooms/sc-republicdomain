@@ -3,7 +3,7 @@
 EXPECTEDISSUES=10
 ISSUECOUNT=$(gh issue list -s all | wc -l)
 echo "Listing the issues in the repo - there should be at least $EXPECTEDISSUES."
-gh issue list -s all | wc -l
+gh issue list -s all
 echo "Found $ISSUECOUNT issues".
 
 echo $GITHUB_TOKEN
