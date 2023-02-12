@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "Make sure that the sample files are not comitted to the repo",
+        "name": "",
         "setup": "",
         "run": ".github/classroom/test1.sh",
         "input": "",

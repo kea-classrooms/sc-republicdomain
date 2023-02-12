@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Make sure that the sample files are not comitted to the repo
-if [ -d ./samples ]
+EXPECTEDISSUES=10
+ISSUECOUNT=$(gh issue list -s all | wc -l)
+echo "Counting the number of issues in the repo - there should be at least $EXPECTEDISSUES."
+echo "Found $ISSUECOUNT issues".
+
+if [ $ISSUECOUNT -ge $EXPECTEDISSUES ]
 then
-  echo "The directory 'samples' is checked in - that's a mistake"
-  exit 1
+  echo "👌 All is good"
+  exit 0
 else
-  echo "Fine. No 'samples' is checked in to the repo!"
+  echo "👎 Dissapointed!"
+  exit 1
 fi
