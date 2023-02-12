@@ -11,7 +11,7 @@
         "points": 25
       },
       {
-        "name": "Test if the setup-samples.sh exist and does what it should",
+        "name": "",
         "setup": "",
         "run": ".github/classroom/test2.sh",
         "input": "",
