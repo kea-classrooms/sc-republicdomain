@@ -13,7 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: gh issue list -s all
+      - run: EXPECTEDISSUES=10 |
+             ISSUECOUNT=$(gh issue list -s all | wc -l) |
+             echo "Counting the number of issues in the repo - there should be at least $EXPECTEDISSUES." |
+             echo "Found $ISSUECOUNT issues". |
+             if [ $ISSUECOUNT -ge $EXPECTEDISSUES ] |
+             then |
+               echo "👌 All is good" |
+               exit 0 |
+             else |
+               echo "👎 Dissapointed!" |
+               exit 1 |
+             fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: education/autograding@v1 
