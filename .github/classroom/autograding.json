@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "",
+        "name": "Testing the team config file",
         "setup": "",
         "run": ".github/classroom/teamconfig.sh",
         "input": "",
