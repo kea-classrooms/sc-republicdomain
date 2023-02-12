@@ -53,7 +53,7 @@
       {
         "name": "Test if push.default is set in .gitconfig",
         "setup": "",
-        "run": ".github/classroom/push.sh",
+        "run": ".github/classroom/pushdefault.sh",
         "input": "",
         "output": "",
         "comparison": "included",
