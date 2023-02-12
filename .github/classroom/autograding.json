@@ -49,6 +49,16 @@
         "comparison": "included",
         "timeout": 10,
         "points": 25
-      }      
+      },    
+      {
+        "name": "Test if push.default is set in .gitconfig",
+        "setup": "",
+        "run": ".github/classroom/push.sh",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 25
+      }     
     ]
   }
