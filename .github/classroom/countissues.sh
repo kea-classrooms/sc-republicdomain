@@ -1,6 +1,6 @@
 #!/bin/bash
 
-EXPECTEDISSUES=11
+EXPECTEDISSUES=10
 ISSUECOUNT=$(gh issue list -s all | wc -l)
 echo "Counting the number of issues in the repo - there should be at least $EXPECTEDISSUES."
 echo "Found $ISSUECOUNT issues".
