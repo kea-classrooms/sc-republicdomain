@@ -13,7 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: education/autograding@v1 |
+      - run: gh issue list -s all
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_STATUS_READER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: education/autograding@v1 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
