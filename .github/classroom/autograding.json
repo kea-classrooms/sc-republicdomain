@@ -11,9 +11,9 @@
         "points": 25
       },
       {
-        "name": "",
+        "name": "Test if the alias.undo is set in the .gitconfig file in the repo",
         "setup": "",
-        "run": ".github/classroom/test2.sh",
+        "run": ".github/classroom/undo.sh",
         "input": "",
         "output": "",
         "comparison": "included",

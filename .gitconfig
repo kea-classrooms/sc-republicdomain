@@ -1,3 +1,4 @@
 [alias]
 	co = checkout
 	root = rev-parse --show-toplevel
+    undo = reset --soft HEAD~1
