@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo $GITHUB_TOKEN
+
 # Test if the setup-samples.sh exist and does what it should
 if [ -x setup-samples.sh ]
 then
