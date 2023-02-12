@@ -21,9 +21,9 @@
         "points": 25
       },
       {
-        "name": "Test if the fix-samples.sh exist and does what it should",
+        "name": "Test if the alias.tree is set in the .gitconfig file in the repo",
         "setup": "",
-        "run": ".github/classroom/test3.sh",
+        "run": ".github/classroom/tree.sh",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -39,6 +39,16 @@
         "comparison": "included",
         "timeout": 10,
         "points": 25
-      }
+      },
+      {
+        "name": "Test if All branches are merged to master",
+        "setup": "",
+        "run": ".github/classroom/merged.sh",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 25
+      }      
     ]
   }
