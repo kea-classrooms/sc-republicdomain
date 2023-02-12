@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: gh issue list -s all
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: education/autograding@v1 
         env:
           GITHUB_TOKEN: ${{ secrets.GH_STATUS_READER }}
