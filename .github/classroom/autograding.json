@@ -3,7 +3,7 @@
       {
         "name": "",
         "setup": "",
-        "run": ".github/classroom/test1.sh",
+        "run": ".github/classroom/teamconfig.sh",
         "input": "",
         "output": "",
         "comparison": "included",
