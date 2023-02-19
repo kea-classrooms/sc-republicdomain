@@ -1,11 +1,8 @@
 [alias]
 	co = checkout
-<<<<<<< HEAD
 	root = rev-parse --show-toplevel
     undo = reset --soft HEAD~1
 	tree = log --oneline --graph --all 
 	mergetest = "!f(){ git merge --no-commit --no-ff \"$1\"; git merge --abort; echo \"Merge aborted\"; };f "
 [push]
 	default = current
-=======
->>>>>>> origin/master
